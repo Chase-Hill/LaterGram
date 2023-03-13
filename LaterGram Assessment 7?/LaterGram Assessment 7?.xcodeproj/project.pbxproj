@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50034929BFE2CF000C5F69 /* Post.swift */; };
+		AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50034B29BFE364000C5F69 /* Date Extension.swift */; };
 		AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98240D29BFCDDA00F75DEE /* AppDelegate.swift */; };
 		AF98241029BFCDDA00F75DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98240F29BFCDDA00F75DEE /* SceneDelegate.swift */; };
-		AF98241229BFCDDA00F75DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98241129BFCDDA00F75DEE /* ViewController.swift */; };
 		AF98241529BFCDDA00F75DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98241329BFCDDA00F75DEE /* Main.storyboard */; };
 		AF98241729BFCDDB00F75DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF98241629BFCDDB00F75DEE /* Assets.xcassets */; };
 		AF98241A29BFCDDB00F75DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98241829BFCDDB00F75DEE /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF50034929BFE2CF000C5F69 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AF50034B29BFE364000C5F69 /* Date Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extension.swift"; sourceTree = "<group>"; };
 		AF98240A29BFCDDA00F75DEE /* LaterGram Assessment 7?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaterGram Assessment 7?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF98240D29BFCDDA00F75DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF98240F29BFCDDA00F75DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF98241129BFCDDA00F75DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF98241429BFCDDA00F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF98241629BFCDDB00F75DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF98241929BFCDDB00F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF50034829BFE231000C5F69 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF98241329BFCDDA00F75DEE /* Main.storyboard */,
+				AF98241829BFCDDB00F75DEE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AF50034D29BFE3BF000C5F69 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF50034B29BFE364000C5F69 /* Date Extension.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		AF50034E29BFE3C7000C5F69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF50034929BFE2CF000C5F69 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AF98240129BFCDDA00F75DEE = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +90,11 @@
 		AF98240C29BFCDDA00F75DEE /* LaterGram Assessment 7? */ = {
 			isa = PBXGroup;
 			children = (
-				AF98242829BFCEDA00F75DEE /* Supporting Files */,
-				AF98241129BFCDDA00F75DEE /* ViewController.swift */,
-				AF98241329BFCDDA00F75DEE /* Main.storyboard */,
-				AF98241829BFCDDB00F75DEE /* LaunchScreen.storyboard */,
 				AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */,
+				AF98242829BFCEDA00F75DEE /* Supporting Files */,
+				AF50034829BFE231000C5F69 /* Storyboard */,
+				AF50034E29BFE3C7000C5F69 /* Models */,
+				AF50034D29BFE3BF000C5F69 /* Helper Files */,
 			);
 			path = "LaterGram Assessment 7?";
 			sourceTree = "<group>";
@@ -163,8 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF98241229BFCDDA00F75DEE /* ViewController.swift in Sources */,
+				AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */,
 				AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */,
+				AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */,
 				AF98241029BFCDDA00F75DEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
