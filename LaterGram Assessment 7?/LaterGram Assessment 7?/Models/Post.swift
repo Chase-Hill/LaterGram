@@ -15,7 +15,8 @@ class Post {
     let postImage: UIImage?
     let uuid: String
     
-    var dictaryRepresentation: [String : AnyHashable] {
+    // No taxation without
+    var dictionaryRepresentation: [String : AnyHashable] {
         ["title": self.postTitle,
          "post": self.postBody,
          "date": self.postDate,
