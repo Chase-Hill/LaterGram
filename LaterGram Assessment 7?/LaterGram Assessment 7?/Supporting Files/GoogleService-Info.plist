@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>250846679875-9n1aq7bpm8pct5359ri3dhoquru6d9lr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.250846679875-9n1aq7bpm8pct5359ri3dhoquru6d9lr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBk2m6-GIB9h587jINSdtf6cskSmLUS32U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>250846679875</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Stateful-Firebase-Day1-MVVM</string>
+	<key>PROJECT_ID</key>
+	<string>traveldiary-chill9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>traveldiary-chill9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:250846679875:ios:c59c469a02b7e1203795f6</string>
+</dict>
+</plist>
