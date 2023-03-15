@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50034929BFE2CF000C5F69 /* Post.swift */; };
 		AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50034B29BFE364000C5F69 /* Date Extension.swift */; };
-		AF50035029BFE407000C5F69 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50034F29BFE407000C5F69 /* FirebaseService.swift */; };
 		AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98240D29BFCDDA00F75DEE /* AppDelegate.swift */; };
 		AF98241029BFCDDA00F75DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98240F29BFCDDA00F75DEE /* SceneDelegate.swift */; };
 		AF98241529BFCDDA00F75DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98241329BFCDDA00F75DEE /* Main.storyboard */; };
@@ -18,12 +17,15 @@
 		AF98242229BFCE1800F75DEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */; };
 		AF98242529BFCEBB00F75DEE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF98242429BFCEBB00F75DEE /* FirebaseFirestore */; };
 		AF98242729BFCEBB00F75DEE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF98242629BFCEBB00F75DEE /* FirebaseStorage */; };
+		AFC14FFF29C26929003A1699 /* Network Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC14FFE29C26929003A1699 /* Network Errors.swift */; };
+		AFC1500129C26A60003A1699 /* Firebase Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1500029C26A60003A1699 /* Firebase Service.swift */; };
+		AFC1500329C26E94003A1699 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1500229C26E94003A1699 /* Constants.swift */; };
+		AFC1500629C287E1003A1699 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1500529C287E1003A1699 /* CreatePostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF50034929BFE2CF000C5F69 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF50034B29BFE364000C5F69 /* Date Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extension.swift"; sourceTree = "<group>"; };
-		AF50034F29BFE407000C5F69 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		AF98240A29BFCDDA00F75DEE /* LaterGram Assessment 7?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaterGram Assessment 7?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF98240D29BFCDDA00F75DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF98240F29BFCDDA00F75DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +35,10 @@
 		AF98241B29BFCDDB00F75DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF98242929BFCEDA00F75DEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFC14FFE29C26929003A1699 /* Network Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Errors.swift"; sourceTree = "<group>"; };
+		AFC1500029C26A60003A1699 /* Firebase Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase Service.swift"; sourceTree = "<group>"; };
+		AFC1500229C26E94003A1699 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFC1500529C287E1003A1699 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,10 @@
 		AF50034D29BFE3BF000C5F69 /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFC1500229C26E94003A1699 /* Constants.swift */,
 				AF50034B29BFE364000C5F69 /* Date Extension.swift */,
-				AF50034F29BFE407000C5F69 /* FirebaseService.swift */,
+				AFC14FFE29C26929003A1699 /* Network Errors.swift */,
+				AFC1500029C26A60003A1699 /* Firebase Service.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				AF50034829BFE231000C5F69 /* Storyboard */,
+				AFC1500429C27671003A1699 /* View Models */,
 				AF50035429BFE557000C5F69 /* Controllers */,
 			);
 			path = Views;
@@ -86,6 +95,7 @@
 		AF50035429BFE557000C5F69 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AFC1500529C287E1003A1699 /* CreatePostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +138,13 @@
 				AF98242929BFCEDA00F75DEE /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFC1500429C27671003A1699 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC14FFF29C26929003A1699 /* Network Errors.swift in Sources */,
 				AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */,
-				AF50035029BFE407000C5F69 /* FirebaseService.swift in Sources */,
+				AFC1500629C287E1003A1699 /* CreatePostViewController.swift in Sources */,
 				AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */,
 				AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */,
+				AFC1500329C26E94003A1699 /* Constants.swift in Sources */,
 				AF98241029BFCDDA00F75DEE /* SceneDelegate.swift in Sources */,
+				AFC1500129C26A60003A1699 /* Firebase Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

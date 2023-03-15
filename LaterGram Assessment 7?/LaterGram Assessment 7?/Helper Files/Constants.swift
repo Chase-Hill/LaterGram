@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Constants {
+    
+    struct Post {
+        static let collectionRef = "posts"
+        static let storageRef = "images"
+    }
+}
