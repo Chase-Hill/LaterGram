@@ -14,7 +14,6 @@
 		AF98241529BFCDDA00F75DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98241329BFCDDA00F75DEE /* Main.storyboard */; };
 		AF98241729BFCDDB00F75DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF98241629BFCDDB00F75DEE /* Assets.xcassets */; };
 		AF98241A29BFCDDB00F75DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF98241829BFCDDB00F75DEE /* LaunchScreen.storyboard */; };
-		AF98242229BFCE1800F75DEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */; };
 		AF98242529BFCEBB00F75DEE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF98242429BFCEBB00F75DEE /* FirebaseFirestore */; };
 		AF98242729BFCEBB00F75DEE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF98242629BFCEBB00F75DEE /* FirebaseStorage */; };
 		AFC14FFF29C26929003A1699 /* Network Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC14FFE29C26929003A1699 /* Network Errors.swift */; };
@@ -28,6 +27,8 @@
 		AFC1502E29C55FF8003A1699 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */; };
 		AFC1503029C56775003A1699 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502F29C56775003A1699 /* SignInViewModel.swift */; };
 		AFC1503229C56B81003A1699 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */; };
+		AFC1503529C5737F003A1699 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFC1503429C5737E003A1699 /* GoogleService-Info.plist */; };
+		AFC1503A29C57C98003A1699 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1503929C57C98003A1699 /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,6 @@
 		AF98241629BFCDDB00F75DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF98241929BFCDDB00F75DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF98241B29BFCDDB00F75DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF98242929BFCEDA00F75DEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFC14FFE29C26929003A1699 /* Network Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Errors.swift"; sourceTree = "<group>"; };
 		AFC1500029C26A60003A1699 /* Firebase Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase Service.swift"; sourceTree = "<group>"; };
 		AFC1500229C26E94003A1699 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -52,6 +51,9 @@
 		AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		AFC1502F29C56775003A1699 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewController.swift; sourceTree = "<group>"; };
+		AFC1503429C5737E003A1699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFC1503629C57384003A1699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFC1503929C57C98003A1699 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,7 @@
 		AF98240C29BFCDDA00F75DEE /* LaterGram Assessment 7? */ = {
 			isa = PBXGroup;
 			children = (
-				AF98242129BFCE1800F75DEE /* GoogleService-Info.plist */,
+				AFC1503629C57384003A1699 /* GoogleService-Info.plist */,
 				AF98242829BFCEDA00F75DEE /* Supporting Files */,
 				AF50035129BFE528000C5F69 /* Views */,
 				AF50034E29BFE3C7000C5F69 /* Models */,
@@ -148,11 +150,11 @@
 		AF98242829BFCEDA00F75DEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFC1503429C5737E003A1699 /* GoogleService-Info.plist */,
 				AF98240D29BFCDDA00F75DEE /* AppDelegate.swift */,
 				AF98240F29BFCDDA00F75DEE /* SceneDelegate.swift */,
 				AF98241629BFCDDB00F75DEE /* Assets.xcassets */,
 				AF98241B29BFCDDB00F75DEE /* Info.plist */,
-				AF98242929BFCEDA00F75DEE /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +196,7 @@
 		AFC1503329C56B9D003A1699 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				AFC1503929C57C98003A1699 /* FeedViewModel.swift */,
 				AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */,
 			);
 			path = Feed;
@@ -266,9 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF98241A29BFCDDB00F75DEE /* LaunchScreen.storyboard in Resources */,
-				AF98242229BFCE1800F75DEE /* GoogleService-Info.plist in Resources */,
 				AF98241729BFCDDB00F75DEE /* Assets.xcassets in Resources */,
 				AF98241529BFCDDA00F75DEE /* Main.storyboard in Resources */,
+				AFC1503529C5737F003A1699 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +287,7 @@
 				AFC1502329C4F6AE003A1699 /* SelectPhotoCollectionViewController.swift in Sources */,
 				AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */,
 				AFC1503229C56B81003A1699 /* FeedCollectionViewController.swift in Sources */,
+				AFC1503A29C57C98003A1699 /* FeedViewModel.swift in Sources */,
 				AFC1503029C56775003A1699 /* SignInViewModel.swift in Sources */,
 				AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */,
 				AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */,

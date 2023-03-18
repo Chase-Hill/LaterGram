@@ -28,13 +28,4 @@ struct SignUpViewModel {
             print("Password don't match.")
         }
     }
-    
-    func signOutAccount() {
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
-        }
-    }
 }

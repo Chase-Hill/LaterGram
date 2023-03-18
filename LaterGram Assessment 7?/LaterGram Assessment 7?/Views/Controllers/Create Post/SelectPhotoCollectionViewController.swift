@@ -27,7 +27,7 @@ class SelectPhotoCollectionViewController: UICollectionViewController {
     
         let asset = self.images[indexPath.row]
         let manager = PHImageManager.default()
-        manager.requestImage(for: asset, targetSize: CGSize(width: 150, height: 150), contentMode: .aspectFill, options: nil) { image, _ in
+        manager.requestImage(for: asset, targetSize: CGSize(width: 200, height: 200), contentMode: .aspectFill, options: nil) { image, _ in
             DispatchQueue.main.async {
                 cell.photoImageView.image = image
             }
