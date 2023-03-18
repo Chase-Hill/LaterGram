@@ -23,29 +23,25 @@ class FeedCollectionViewController: UICollectionViewController {
 
     // MARK: - Action
     @IBAction func signOutButtonTapped(_ sender: Any) {
+        viewModel.signOutAccount()
     }
-    
-    
-    // MARK: - Functions
-
     
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return viewModel.posts.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
     
-        // Configure the cell
+        let post = viewModel.posts[indexPath.item]
+        cell.configure(withPost: post)
     
         return cell
     }
 }
 
 // MARK: - Extensions
-
 extension FeedCollectionViewController: FeedViewModelDelegate {
     func postsLoadedSuccessfully() {
         collectionView.reloadData()
