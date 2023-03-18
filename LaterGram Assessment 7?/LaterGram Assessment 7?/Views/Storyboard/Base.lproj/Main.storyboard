@@ -280,6 +280,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create Account!"/>
+                                <connections>
+                                    <action selector="createAccountButtonTapped:" destination="ct9-Jb-Yce" eventType="touchUpInside" id="n97-Dh-BDQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Valid Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-c0-zZS">
                                 <rect key="frame" x="46" y="215" width="300" height="34"/>
@@ -300,10 +303,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="azI-WS-0FK"/>
+                    <connections>
+                        <outlet property="userConfirmPasswordTextField" destination="33M-gA-xvT" id="MHG-1H-2RQ"/>
+                        <outlet property="userEmailTextField" destination="qVd-c0-zZS" id="rtE-ql-XgS"/>
+                        <outlet property="userPasswordTextField" destination="5QV-as-qxF" id="kzZ-Hu-B44"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nL2-Fy-c1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8113.740458015267" y="-1423.2394366197184"/>
+            <point key="canvasLocation" x="8114" y="-1423"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qTr-z8-bu7">

@@ -25,6 +25,7 @@
 		AFC1502529C4FA6C003A1699 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502429C4FA6C003A1699 /* PhotoCollectionViewCell.swift */; };
 		AFC1502829C508B6003A1699 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502729C508B6003A1699 /* SignInViewController.swift */; };
 		AFC1502B29C54BC3003A1699 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */; };
+		AFC1502E29C55FF8003A1699 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AFC1502429C4FA6C003A1699 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFC1502729C508B6003A1699 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 		AF50035429BFE557000C5F69 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AFC1502929C54BAB003A1699 /* Sign In and Sign Up */,
+				AFC1502C29C55FDF003A1699 /* Sign Up */,
+				AFC1502929C54BAB003A1699 /* Sign In */,
 				AFC1502629C5089E003A1699 /* Create Post */,
 			);
 			path = Controllers;
@@ -165,13 +168,21 @@
 			path = "Create Post";
 			sourceTree = "<group>";
 		};
-		AFC1502929C54BAB003A1699 /* Sign In and Sign Up */ = {
+		AFC1502929C54BAB003A1699 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
 				AFC1502729C508B6003A1699 /* SignInViewController.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		AFC1502C29C55FDF003A1699 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */,
 				AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */,
 			);
-			path = "Sign In and Sign Up";
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 				AFC1500329C26E94003A1699 /* Constants.swift in Sources */,
 				AF98241029BFCDDA00F75DEE /* SceneDelegate.swift in Sources */,
 				AFC1502829C508B6003A1699 /* SignInViewController.swift in Sources */,
+				AFC1502E29C55FF8003A1699 /* SignUpViewModel.swift in Sources */,
 				AFC1500129C26A60003A1699 /* Firebase Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

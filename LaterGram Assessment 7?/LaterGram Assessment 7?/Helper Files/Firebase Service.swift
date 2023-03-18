@@ -9,7 +9,17 @@ import UIKit
 import FirebaseFirestore
 import FirebaseStorage
 
-struct FirebaseService {
+protocol FirebaseSyncable {
+    func savePost(user: String, body: String, image: UIImage, uuid: String, completion: @escaping () -> Void)
+    func loadPosts(completion: @escaping (Result <[Post], NetworkError>) -> Void)
+    func deletePost(with post: Post)
+    func saveImage(_ image: UIImage, with uuidString: String, completion: @escaping (Result <URL, NetworkError>) -> Void)
+    func fetchImage(from post: Post, completion: @escaping (Result <UIImage, NetworkError>) -> Void)
+    func deleteImage(from post: Post)
+    func update(_ post: Post, with newImage: UIImage, completion: @escaping () -> Void)
+}
+
+struct FirebaseService: FirebaseSyncable {
     
     // MARK: - Properties
     let ref = Firestore.firestore()
