@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Feed Collection View Controller-->
         <scene sceneID="Lji-xj-WTN">
             <objects>
-                <collectionViewController id="j7H-4T-fHh" sceneMemberID="viewController">
+                <collectionViewController id="j7H-4T-fHh" customClass="FeedCollectionViewController" customModule="LaterGram_Assessment_7_" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1zF-N3-0wT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus.app" catalog="system" id="EZ0-SR-7Fn">
                             <connections>
-                                <segue destination="umn-kF-RVB" kind="show" id="IXr-DP-pgy"/>
+                                <segue destination="umn-kF-RVB" kind="show" id="hmK-Al-5bC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -141,16 +141,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qT-OM-AdZ">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qT-OM-AdZ">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="1qT-OM-AdZ" firstAttribute="leading" secondItem="qCp-Qk-Tuq" secondAttribute="leading" id="1qY-gY-Ar6"/>
-                                        <constraint firstItem="1qT-OM-AdZ" firstAttribute="top" secondItem="qCp-Qk-Tuq" secondAttribute="top" id="6m7-uB-DK2"/>
-                                        <constraint firstItem="1qT-OM-AdZ" firstAttribute="height" secondItem="qCp-Qk-Tuq" secondAttribute="height" multiplier="0.84" id="CET-6V-slw"/>
-                                        <constraint firstItem="1qT-OM-AdZ" firstAttribute="width" secondItem="qCp-Qk-Tuq" secondAttribute="width" id="RGa-u6-Yed"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="150" height="150"/>
                                 <connections>
@@ -167,7 +162,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eB-rT-Ve7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8940" y="-742"/>
+            <point key="canvasLocation" x="8976" y="-742"/>
         </scene>
         <!--Account-->
         <scene sceneID="DNk-ux-Fvs">
@@ -210,6 +205,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                <connections>
+                                    <action selector="logInButtonTapped:" destination="FyZ-Co-Z0B" eventType="touchUpInside" id="T54-PL-Uhy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueF-Bb-JQJ">
                                 <rect key="frame" x="46" y="751" width="179" height="21"/>
@@ -250,6 +248,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VmY-mZ-KgC"/>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="gbd-8g-XXe" id="lEY-Mv-yRa"/>
+                        <outlet property="userPasswordTextField" destination="h8F-lx-VwV" id="QKn-Rr-r30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCV-7s-jaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +318,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="qTr-z8-bu7">
             <objects>
-                <tabBarController id="jj1-M1-3Cy" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Navigation" id="jj1-M1-3Cy" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ib-cH-4W3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -352,7 +354,7 @@
         <!--Home-->
         <scene sceneID="P7K-ak-bpg">
             <objects>
-                <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="eK2-wC-ttq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eK2-wC-ttq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Z05-OT-9uh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGX-TV-jw9">

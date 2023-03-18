@@ -26,6 +26,8 @@
 		AFC1502829C508B6003A1699 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502729C508B6003A1699 /* SignInViewController.swift */; };
 		AFC1502B29C54BC3003A1699 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */; };
 		AFC1502E29C55FF8003A1699 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */; };
+		AFC1503029C56775003A1699 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1502F29C56775003A1699 /* SignInViewModel.swift */; };
+		AFC1503229C56B81003A1699 /* FeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		AFC1502729C508B6003A1699 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AFC1502D29C55FF8003A1699 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AFC1502F29C56775003A1699 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				AFC1502C29C55FDF003A1699 /* Sign Up */,
 				AFC1502929C54BAB003A1699 /* Sign In */,
+				AFC1503329C56B9D003A1699 /* Feed */,
 				AFC1502629C5089E003A1699 /* Create Post */,
 			);
 			path = Controllers;
@@ -162,8 +167,8 @@
 		AFC1502629C5089E003A1699 /* Create Post */ = {
 			isa = PBXGroup;
 			children = (
-				AFC1502429C4FA6C003A1699 /* PhotoCollectionViewCell.swift */,
 				AFC1502229C4F6AD003A1699 /* SelectPhotoCollectionViewController.swift */,
+				AFC1502429C4FA6C003A1699 /* PhotoCollectionViewCell.swift */,
 			);
 			path = "Create Post";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		AFC1502929C54BAB003A1699 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				AFC1502F29C56775003A1699 /* SignInViewModel.swift */,
 				AFC1502729C508B6003A1699 /* SignInViewController.swift */,
 			);
 			path = "Sign In";
@@ -183,6 +189,14 @@
 				AFC1502A29C54BC3003A1699 /* SignUpViewController.swift */,
 			);
 			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		AFC1503329C56B9D003A1699 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AFC1503129C56B81003A1699 /* FeedCollectionViewController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +283,8 @@
 				AFC14FFF29C26929003A1699 /* Network Errors.swift in Sources */,
 				AFC1502329C4F6AE003A1699 /* SelectPhotoCollectionViewController.swift in Sources */,
 				AF50034A29BFE2CF000C5F69 /* Post.swift in Sources */,
+				AFC1503229C56B81003A1699 /* FeedCollectionViewController.swift in Sources */,
+				AFC1503029C56775003A1699 /* SignInViewModel.swift in Sources */,
 				AF98240E29BFCDDA00F75DEE /* AppDelegate.swift in Sources */,
 				AF50034C29BFE364000C5F69 /* Date Extension.swift in Sources */,
 				AFC1502529C4FA6C003A1699 /* PhotoCollectionViewCell.swift in Sources */,
